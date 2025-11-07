@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --background: hsl(47, 88%, 63%);
+  --card: hsl(0, 0%, 100%);
+  --font-color-gray: hsl(0, 0%, 42%);
+  --font-color-black: hsl(0, 0%, 7%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: var(--background);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+
+.card {
+  background-color: var(--card);
+  padding: 25px;
+  border-radius: 20px;
+  border: black solid 1px;
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  box-shadow: 16px 19px 3px -5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+img[alt="illustration"] {
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+p {
+  color: var(--font-color-gray);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: var(--font-color-black);
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: 800;
+}
+
+h2[name="category"] {
+  font-size: 15px;
+  font-weight: 800;
+  background-color: var(--background);
+  padding: 6px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2[name="author"] {
+  font-size: 15px;
+  color: var(--font-color-black);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 14px;
+  color: var(--Gray-950);
+}
+
+img[alt="Greg Hooper"] {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
